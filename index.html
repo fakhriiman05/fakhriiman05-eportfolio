@@ -1,0 +1,326 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>e-Portfolio | Muhammad Fakhri Iman Bin Mohd Supaad</title> <style> :root{ --primary:#0288d1; --secondary:#03a9f4; --light:#e1f5fe; --dark:#01579b; --white:#ffffff; --gray:#f5f7fa; --text:#333333; --shadow:0 10px 25px rgba(0,0,0,0.1); }
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background:var(--gray);
+color:var(--text);
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,var(--primary),var(--dark));
+color:white;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:2rem;
+}
+
+.hero{
+max-width:900px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:1rem;
+}
+
+.hero p{
+font-size:1.1rem;
+margin-bottom:1rem;
+}
+
+.hero-badge{
+display:inline-block;
+background:rgba(255,255,255,0.15);
+padding:10px 20px;
+border-radius:30px;
+margin-top:15px;
+}
+
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:1rem;
+gap:1rem;
+}
+
+nav a{
+text-decoration:none;
+color:var(--dark);
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--secondary);
+}
+
+section{
+max-width:1200px;
+margin:auto;
+padding:80px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+color:var(--dark);
+font-size:2rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card-content{
+padding:20px;
+}
+
+.card h3{
+color:var(--dark);
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:10px;
+}
+
+iframe{
+width:100%;
+height:250px;
+border:none;
+}
+
+.github-btn{
+display:inline-block;
+margin-top:10px;
+background:var(--primary);
+color:white;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.github-btn:hover{
+background:var(--dark);
+}
+
+.info-box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:var(--shadow);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:center;
+}
+
+.skill{
+background:var(--light);
+color:var(--dark);
+padding:10px 18px;
+border-radius:25px;
+font-weight:600;
+}
+
+footer{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.2rem;
+}
+
+iframe{
+    height:220px;
+}
+
+}
+</style>
+
+</head> <body> <nav> <div class="nav-container"> <a href="#home">Home</a> <a href="#labs">Labs</a> <a href="#projects">Projects</a> <a href="#reflection">Reflection</a> <a href="#skills">Skills</a> <a href="#resources">Resources</a> </div> </nav> <header id="home"> <div class="hero"> <h1>Muhammad Fakhri Iman Bin Mohd Supaad</h1> <p><strong>Matric No:</strong> A210534</p> <p><strong>Programme:</strong> TTTM2213 Pengaturcaraan Aplikasi Mudah Alih</p> <p><strong>Instructor:</strong> Mr Nelson</p>
+	<p>
+        This is the e-portfolio for all of my lab and project submissions throughout the course.
+        It showcases my learning journey, practical skills, and mobile application development experience.
+    </p>
+
+    <div class="hero-badge">
+        SDG 6 – Clean Water and Sanitation
+    </div>
+
+    <p style="margin-top:20px;">
+        SDG 6 focuses on ensuring availability and sustainable management of water and sanitation for all.
+        My project supports this goal by helping users monitor hydration habits, learn about water conservation,
+        and report local water-related issues through a mobile application.
+    </p>
+</div>
+</header> <section id="labs"> <h2 class="section-title">Laboratory Activities</h2>
+<div class="grid">
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/gX11D5H35ZU" title="Lab 1 UI"></iframe>
+        <div class="card-content">
+            <h3>Lab 1 – UI</h3>
+            <p>Introduction to creating user interfaces for Android applications.</p>
+            <p><strong>Reflection:</strong> I learned how to create a user interface and organize application components effectively. This lab helped me understand the fundamentals of designing mobile app screens.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/HnuhxSkMJy4" title="Lab 2 Interaction"></iframe>
+        <div class="card-content">
+            <h3>Lab 2 – Interaction</h3>
+            <p>Implementation of user interactions and event handling.</p>
+            <p><strong>Reflection:</strong> I learned how to create interactions between users and application components. This improved my understanding of event-driven programming.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/JrTksF2UPog" title="Lab 3 Material Design"></iframe>
+        <div class="card-content">
+            <h3>Lab 3 – Material Design</h3>
+            <p>Applying Material Design principles in Android development.</p>
+            <p><strong>Reflection:</strong> I learned about design consistency and user experience principles. This lab helped me build more attractive and user-friendly applications.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/7X7LjLIRBGc" title="Lab 4 Navigation"></iframe>
+        <div class="card-content">
+            <h3>Lab 4 – Navigation</h3>
+            <p>Building navigation systems within Android applications.</p>
+            <p><strong>Reflection:</strong> I learned navigation concepts in greater detail. Understanding navigation made it easier to create a smooth user experience across multiple screens.</p>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/iaBtM8jR2L4" title="Lab 5 Room"></iframe>
+        <div class="card-content">
+            <h3>Lab 5 – Room Database</h3>
+            <p>Using Room Database for local data storage.</p>
+            <p><strong>Reflection:</strong> I learned how Room Database simplifies local data management. This knowledge helped me build applications that can function offline efficiently.</p>
+        </div>
+    </article>
+
+</div>
+</section> <section id="projects"> <h2 class="section-title">Projects</h2>
+	<div class="grid">
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/NmMNMcZawXs" title="Project 1 Aglea"></iframe>
+        <div class="card-content">
+            <h3>Project 1 – Aglea</h3>
+
+            <p><strong>Problem Statement:</strong><br>
+            Many individuals lack a consistent way to monitor their daily water consumption, leading to chronic dehydration and a lack of awareness regarding personal water usage habits.</p>
+
+            <p><strong>Description:</strong><br>
+            Aglea is a hydration monitoring application that helps users track daily water intake and maintain healthy hydration habits.</p>
+
+            <p><strong>Reflection:</strong><br>
+            I learned how to integrate all previous lab knowledge into a complete mobile application. This project improved my problem-solving skills and helped me create an app that can be used personally without internet access.</p>
+
+            <a class="github-btn" href="https://github.com/fakhriiman05/A210534_MrNelson_Project1" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+    </article>
+
+    <article class="card">
+        <iframe src="https://www.youtube.com/embed/4OrnqRiQ6M4" title="Project 2 Aglea"></iframe>
+        <div class="card-content">
+            <h3>Project 2 – Aglea</h3>
+
+            <p><strong>Problem Statement:</strong><br>
+            Many people are unaware of the specific UN targets for water conservation and lack a way to report local water infrastructure issues. My app solves this by integrating live SDG education, real-time weather-based hydration tips, and a community reporting portal.</p>
+
+            <p><strong>Description:</strong><br>
+            An enhanced version of Aglea integrating cloud services, APIs, educational SDG content, and community reporting features.</p>
+
+            <p><strong>Reflection:</strong><br>
+            I learned how to use Google Cloud, Firebase, and external APIs to create a more advanced application. This project strengthened my understanding of cloud-based mobile development and real-world integration.</p>
+
+            <a class="github-btn" href="https://github.com/fakhriiman05/A210534_MrNelson_Project2" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+    </article>
+
+</div>
+</section> <section id="reflection"> <h2 class="section-title">Reflection & Learning Journey</h2>
+<div class="info-box">
+    <p>
+        Throughout this course, I gained valuable experience in mobile application development using modern Android technologies.
+        Starting from basic UI creation, I gradually learned interaction handling, navigation, local databases, cloud services, and API integration.
+        The projects allowed me to apply theoretical concepts into practical solutions aligned with SDG 6: Clean Water and Sanitation.
+        Overall, this learning journey improved both my technical skills and my confidence in developing complete mobile applications.
+    </p>
+</div>
+</section> <section id="skills"> <h2 class="section-title">Skills & Tech Stack</h2>
+	<div class="skills">
+    <span class="skill">Kotlin</span>
+    <span class="skill">Android Studio</span>
+    <span class="skill">Jetpack Compose</span>
+    <span class="skill">Material Design</span>
+    <span class="skill">Navigation</span>
+    <span class="skill">Room Database</span>
+    <span class="skill">Firebase</span>
+    <span class="skill">Google Cloud</span>
+    <span class="skill">REST API</span>
+    <span class="skill">Cloud Firestore</span>
+    <span class="skill">Maps SDK for Android</span>
+    <span class="skill">GitHub</span>
+</div>
+</section> <section id="resources"> <h2 class="section-title">Resources</h2>
+	<div class="info-box">
+    <ul>
+        <li>Maps SDK for Android</li>
+        <li>Cloud Firestore API</li>
+        <li>ChatGPT</li>
+        <li>Gemini</li>
+    </ul>
+</div>
+</section> <footer> <p><strong>Muhammad Fakhri Iman Bin Mohd Supaad</strong></p> <p>Matric No: A210534</p> <p>&copy; 2026 e-Portfolio | TTTM2213 Pengaturcaraan Aplikasi Mudah Alih</p> </footer> </body> </html>
